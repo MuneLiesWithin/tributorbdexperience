@@ -26,6 +26,15 @@ const shows = [
     platform: "Articket",
   },
   {
+    date: "24",
+    month: "OUT",
+    city: "Bauru",
+    state: "SP",
+    //url: "https://articket.com.br/e/6346/tributo-rbd-em-sao-goncalo",
+    platform: "Gratuito no Boulevard Shopping Bauru",
+    noLink: true,
+  },
+  {
     date: "21",
     month: "NOV",
     city: "Recife",
@@ -177,13 +186,16 @@ export default function TicketsSection() {
         >
           {shows.map((show, i) => {
             const isHovered = hoveredIndex === i;
+            const CardWrapper = show.noLink ? "div" : "a"; // Dynamically choose tag
 
             return (
-              <a
+              <CardWrapper
                 key={i}
-                href={show.url}
-                target="_blank"
-                rel="noopener noreferrer"
+                {...(!show.noLink && {
+                  href: show.url,
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                })}
                 onMouseEnter={() => setHoveredIndex(i)}
                 onMouseLeave={() => setHoveredIndex(null)}
                 style={{
@@ -193,7 +205,7 @@ export default function TicketsSection() {
                   background: isHovered ? "#d61f3a" : "#111111",
                   padding: "36px 32px",
                   transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
-                  cursor: "pointer",
+                  cursor: show.noLink ? "default" : "pointer", // Change cursor if no link
                   overflow: "hidden",
                 }}
               >
@@ -312,40 +324,43 @@ export default function TicketsSection() {
                     {show.platform}
                   </span>
 
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "8px",
-                      fontFamily: "var(--font-Josefin)",
-                      fontSize: "11px",
-                      fontWeight: "700",
-                      letterSpacing: "3px",
-                      textTransform: "uppercase",
-                      color: isHovered ? "#f8f8f8" : "#d61f3a",
-                      transition: "all 0.3s ease",
-                    }}
-                  >
-                    Ingressos
-                    <span
+                  {/* ONLY RENDER THE INGRESSOS BUTTON IF THERE IS A LINK */}
+                  {!show.noLink && (
+                    <div
                       style={{
-                        display: "inline-flex",
+                        display: "flex",
                         alignItems: "center",
-                        justifyContent: "center",
-                        width: "28px",
-                        height: "28px",
-                        borderRadius: "50%",
-                        border: `1px solid ${isHovered ? "rgba(248,248,248,0.5)" : "#d61f3a"}`,
-                        fontSize: "13px",
+                        gap: "8px",
+                        fontFamily: "var(--font-Josefin)",
+                        fontSize: "11px",
+                        fontWeight: "700",
+                        letterSpacing: "3px",
+                        textTransform: "uppercase",
+                        color: isHovered ? "#f8f8f8" : "#d61f3a",
                         transition: "all 0.3s ease",
-                        transform: isHovered ? "translate(3px, 0)" : "none",
                       }}
                     >
-                      →
-                    </span>
-                  </div>
+                      Ingressos
+                      <span
+                        style={{
+                          display: "inline-flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          width: "28px",
+                          height: "28px",
+                          borderRadius: "50%",
+                          border: `1px solid ${isHovered ? "rgba(248,248,248,0.5)" : "#d61f3a"}`,
+                          fontSize: "13px",
+                          transition: "all 0.3s ease",
+                          transform: isHovered ? "translate(3px, 0)" : "none",
+                        }}
+                      >
+                        →
+                      </span>
+                    </div>
+                  )}
                 </div>
-              </a>
+              </CardWrapper>
             );
           })}
         </div>

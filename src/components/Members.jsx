@@ -2,8 +2,9 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiChevronLeft, FiChevronRight, FiArrowLeft } from "react-icons/fi";
 
-import { FaCrown, FaPeace, FaStar, FaGem, FaHatCowboy } from "react-icons/fa";
+import { FaPeace, FaStar, FaGem, FaHatCowboy } from "react-icons/fa";
 import { MdBolt } from "react-icons/md";
+import { RiSparkling2Fill } from "react-icons/ri";
 
 const images = import.meta.glob("../assets/members/*.{png,jpg,jpeg}", {
   eager: true,
@@ -49,6 +50,17 @@ const members = [
       
       Como cantora no Tributo, leva a nostalgia para fãs de RBD e especialmente da Dulce por todo o país!`,
   },
+  
+  {
+    name: "Rafa",
+    role: "Interpreta : Christian Chavez",
+    icon: <RiSparkling2Fill color="#FFD43B" size={40} className="text-blue-500" />,
+    image: images["../assets/members/rafa-christian.jpeg"],
+    bio: `Multi artista, comunicador, influenciador e drag Queen, Rafael está há 15 anos envolvido de várias formas com a arte. Da criança que fazia teatro e dançava coreografias aos palcos nos dias de hoje, finalmente se realiza ao dar voz à interpretação de Christian Chavez.
+
+      "Poder representar alguém que ajudou a formar quem eu sou, além de uma realização gigante, é a celebração de tudo que eu me tornei em forma de homenagem."`,
+  },
+  
   {
     name: "Caca",
     role: "Interpreta : Maite Perroni",

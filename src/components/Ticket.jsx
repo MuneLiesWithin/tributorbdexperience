@@ -18,6 +18,14 @@ const shows = [
     platform: "Sympla",
   },
   {
+    date: "10",
+    month: "OUT",
+    city: "Lapa Combo com o Sétimo RBD",
+    state: "RJ",
+    url: "https://outgo.com.br/combo-tributo-ao-rbd-experience-setimo-rbd-a-festa",
+    platform: "Outgo",
+  },
+  {
     date: "11",
     month: "OUT",
     city: "São Gonçalo",

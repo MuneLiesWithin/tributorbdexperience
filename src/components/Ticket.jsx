@@ -2,38 +2,6 @@ import { useState } from "react";
 
 const shows = [
   {
-    date: "09",
-    month: "OUT",
-    city: "Nilópolis",
-    state: "RJ",
-    url: "https://www.sympla.com.br/evento/tributo-ao-rbd-experience-live-in-nilopolis-rj/3453259",
-    platform: "Sympla",
-  },
-  {
-    date: "10",
-    month: "OUT",
-    city: "Lapa",
-    state: "RJ",
-    url: "https://www.sympla.com.br/evento/tributo-ao-rbd-experience-live-in-lapa-rj/3453349",
-    platform: "Sympla",
-  },
-  {
-    date: "10",
-    month: "OUT",
-    city: "Lapa Combo com o Sétimo RBD",
-    state: "RJ",
-    url: "https://outgo.com.br/combo-tributo-ao-rbd-experience-setimo-rbd-a-festa",
-    platform: "Outgo",
-  },
-  {
-    date: "11",
-    month: "OUT",
-    city: "São Gonçalo",
-    state: "RJ",
-    url: "https://articket.com.br/e/6346/tributo-rbd-em-sao-goncalo",
-    platform: "Articket",
-  },
-  {
     date: "24",
     month: "OUT",
     city: "Bauru",

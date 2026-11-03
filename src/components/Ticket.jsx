@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 const shows = [
+  /*
   {
     date: "24",
     month: "OUT",
@@ -10,22 +11,7 @@ const shows = [
     platform: "Gratuito no Boulevard Shopping Bauru",
     noLink: true,
   },
-  {
-    date: "21",
-    month: "NOV",
-    city: "Recife",
-    state: "PE",
-    url: "https://outgo.com.br/tributo-ao-rbd-experience-em-recife",
-    platform: "Outgo",
-  },
-  {
-    date: "22",
-    month: "NOV",
-    city: "Fortaleza",
-    state: "CE",
-    url: "https://outgo.com.br/tributo-ao-rbd-experience-em-fortaleza",
-    platform: "Outgo",
-  },
+  */
   {
     date: "11",
     month: "DEZ",
@@ -33,6 +19,51 @@ const shows = [
     state: "SP",
     url: "https://olhaoingresso.showare.com.br/Default.aspx?display=list&filter=none&eventid=2137&websaleschannelkey=internetmh",
     platform: "Olha o Ingresso",
+  },
+  {
+    date: "23",
+    month: "ABR",
+    city: "Fortaleza",
+    state: "CE",
+    //url: "https://articket.com.br/e/6346/tributo-rbd-em-sao-goncalo",
+    platform: "Ingressos em breve",
+    noLink: true,
+  },
+  {
+    date: "24",
+    month: "ABR",
+    city: "Recife",
+    state: "PE",
+    //url: "https://articket.com.br/e/6346/tributo-rbd-em-sao-goncalo",
+    platform: "Ingressos em breve",
+    noLink: true,
+  },
+  {
+    date: "22",
+    month: "MAIO",
+    city: "Porto Alegre",
+    state: "RS",
+    //url: "https://articket.com.br/e/6346/tributo-rbd-em-sao-goncalo",
+    platform: "Ingressos em breve",
+    noLink: true,
+  },
+  {
+    date: "23",
+    month: "MAIO",
+    city: "Curitiba",
+    state: "PR",
+    //url: "https://articket.com.br/e/6346/tributo-rbd-em-sao-goncalo",
+    platform: "Ingressos em breve",
+    noLink: true,
+  },
+  {
+    date: "26",
+    month: "JUN",
+    city: "Belo Horizonte",
+    state: "MG",
+    //url: "https://articket.com.br/e/6346/tributo-rbd-em-sao-goncalo",
+    platform: "Ingressos em breve",
+    noLink: true,
   },
 ];
 
@@ -147,7 +178,7 @@ export default function TicketsSection() {
                 textAlign: "right",
               }}
             >
-              Tributo ao RBD<br />Brasil 2026
+              Tributo ao RBD<br />Brasil 2026/2027
             </p>
           </div>
         </div>

@@ -66,7 +66,7 @@ const members = [
     role: "Interpreta : Maite Perroni",
     icon: <FaGem className="text-pink-300" />,
     image: images["../assets/members/caca-maite.png"],
-    bio: ` Trabalha com marketing há 6 anos e é sócia do Ronie na Artevo Agência. Tem passagem pelo teatro, hoje estuda canto e cria seus próprios figurinos, réplicas fiéis dos looks da Maite.
+    bio: ` Responsável pelo marketing do Tributo, tem passagem pelo teatro, hoje estuda canto e cria seus próprios figurinos, réplicas fiéis dos looks da Maite.
 
   "Fazer parte de um grupo cover sempre foi um sonho e hoje é realidade. Assim como o RBD ensinou: quando a gente luta pelos sonhos, eles de fato se tornam reais."`,
   },

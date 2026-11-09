@@ -20,7 +20,7 @@ export default function Contact() {
         </picture>
       </div>
 
-      <div className="absolute inset-0 bg-black/60 md:bg-black/50" />
+      <div className="absolute inset-0 bg-black/20 md:bg-black/10" />
 
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/30" />
 
